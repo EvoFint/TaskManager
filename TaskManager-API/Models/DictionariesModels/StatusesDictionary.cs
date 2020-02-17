@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TaskManager_API.Models.DictionariesModels
 {
-    [Table("Statuses")]
+    [Table("statuses")]
     public class StatusesDictionary
     {
         [Key]
