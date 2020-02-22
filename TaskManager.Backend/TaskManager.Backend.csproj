@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
-        <RootNamespace>TaskManager_API</RootNamespace>
+        <RootNamespace>TaskManager.Backend</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
