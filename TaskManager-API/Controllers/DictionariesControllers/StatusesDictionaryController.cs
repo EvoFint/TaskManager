@@ -7,10 +7,11 @@ using TaskManager_API.Models;
 
 namespace TaskManager_API.Controllers.DictionariesControllers
 {
+    [Route("api/dictionaries")]
     [ApiController]
     public class StatusesDictionaryController : Controller
     {
-        [Route("dictionariesController/getTasksStatuses")]
+        [HttpGet("statuses")]
         public async Task<IActionResult> GetTasksStatuses(string token)
         {
             using (TaskManagerAppContext db = new TaskManagerAppContext())
