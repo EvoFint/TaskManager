@@ -4,8 +4,8 @@ namespace TaskManager.Backend.Models.DTO
 {
     public class RequestDto<T>
     {
-        [JsonPropertyName("data")]
-        T Data { get; }
+        [JsonPropertyName("data")] 
+        private T Data { get; }
 
         public RequestDto(T data)
         {
