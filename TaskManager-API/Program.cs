@@ -20,7 +20,12 @@ namespace TaskManager_API
         {
             var hostUrl = "http://0.0.0.0:8080";
             return Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder => { webBuilder.UseUrls(hostUrl).UseStartup<Startup>(); });
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder
+                        .UseUrls(hostUrl)
+                        .UseStartup<Startup>();
+                });
         }
     }
 }
