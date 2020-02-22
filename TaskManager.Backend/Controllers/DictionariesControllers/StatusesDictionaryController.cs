@@ -1,11 +1,10 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using TaskManager_API.Models;
+using TaskManager.Backend.Models.Context;
 
-namespace TaskManager_API.Controllers.DictionariesControllers
+namespace TaskManager.Backend.Controllers.DictionariesControllers
 {
     [Route("api/dictionaries")]
     [ApiController]

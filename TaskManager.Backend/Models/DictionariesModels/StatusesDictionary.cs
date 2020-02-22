@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace TaskManager_API.Models.DictionariesModels
+namespace TaskManager.Backend.Models.DictionariesModels
 {
     [Table("statuses")]
     public abstract class StatusesDictionary

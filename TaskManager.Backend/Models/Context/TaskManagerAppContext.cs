@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using TaskManager_API.Models.DictionariesModels;
+﻿using Microsoft.EntityFrameworkCore;
+using TaskManager.Backend.Models.DictionariesModels;
 
-namespace TaskManager_API.Models
+namespace TaskManager.Backend.Models.Context
 {
     public class TaskManagerAppContext : DbContext
     {
