@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace TaskManager.Backend.Models.DictionariesModels
 {
     [Table("statuses")]
-    public abstract class StatusesDictionary
+    public class StatusesDictionary
     {
         [Key]
         [Column("id")]
