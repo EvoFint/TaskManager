@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace TaskManager.Backend.Models.DTO
+namespace TaskManager.Backend.Models.Dto
 {
     public class StatusesDto
     {
