@@ -1,8 +1,12 @@
-﻿using System.Linq;
+﻿using System.Collections;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TaskManager.Backend.Models.Context;
+using TaskManager.Backend.Models.DictionariesModels;
+using TaskManager.Backend.Models.Dto;
+using TaskManager.Backend.Services;
 
 namespace TaskManager.Backend.Controllers.DictionariesControllers
 {
@@ -10,14 +14,14 @@ namespace TaskManager.Backend.Controllers.DictionariesControllers
     [ApiController]
     public class StatusesDictionaryController : Controller
     {
-        [HttpGet("statuses")]
-        public async Task<IActionResult> GetTasksStatuses(string token)
+        private readonly IStatusesService _statusesService;
+
+        public StatusesDictionaryController(IStatusesService statusesService)
         {
-            using (TaskManagerAppContext db = new TaskManagerAppContext())
-            {
-                var statusesDictionary = await db.StatusesDictionaries.ToListAsync();
-                return Json(statusesDictionary.Select(sd => new {id = sd.Id, name = sd.Name}));
-            }
+            _statusesService = statusesService;
         }
+
+        [HttpGet, Route("statuses")]
+        public async Task<StatusesListDto> GetTasksStatuses(string token) => await _statusesService.GetAll();
     }
 }
