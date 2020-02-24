@@ -6,6 +6,7 @@ namespace TaskManager.Backend.Models.Context
     public class TaskManagerAppContext : DbContext
     {
         public DbSet<StatusesDictionary> StatusesDictionaries { get; set; }
+        public DbSet<TypesDictionary> TypesDictionaries { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseNpgsql(
