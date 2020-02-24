@@ -2,6 +2,7 @@
 {
     public class StatusesListDto
     {
-        public StatusDto[] Items { get; set; }
+        public StatusDto[] Items { get; set; } = new StatusDto[0];
+        
     }
 }
