@@ -5,6 +5,6 @@ namespace TaskManager.Backend.Services
 {
     public interface IStatusesService
     {
-        Task<StatusesListDto> GetAll();
+        Task<StatusDto[]> GetAll();
     }
 }
