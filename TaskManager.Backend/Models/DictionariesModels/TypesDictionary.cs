@@ -11,6 +11,6 @@ namespace TaskManager.Backend.Models.DictionariesModels
         public int Id { get; set; }
         
         [Column("type_name")]
-        public int Name { get; set; }
+        public string Name { get; set; }
     }
 }
