@@ -23,6 +23,7 @@ namespace TaskManager.Backend
             services.AddControllers().AddNewtonsoftJson();
             services.AddScoped<IStatusesService, StatusesService>();
             services.AddScoped<ITypesService, TypesService>();
+            services.AddScoped<IPrioritiesService, PrioritiesService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
