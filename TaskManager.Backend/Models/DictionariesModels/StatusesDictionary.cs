@@ -10,7 +10,7 @@ namespace TaskManager.Backend.Models.DictionariesModels
         [Column("id")]
         public int Id { get; set; }
         
-        [Column("status_name")]
+        [Column("name")]
         public string Name { get; set; }
     }
 }
