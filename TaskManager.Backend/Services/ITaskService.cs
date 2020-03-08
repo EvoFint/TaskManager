@@ -5,6 +5,6 @@ namespace TaskManager.Backend.Services
 {
     public interface ITaskService
     {
-        Task<TaskModel> CreateNewTask(TaskModel task);
+        Task<string> CreateNewTask(TaskModel task);
     }
 }
