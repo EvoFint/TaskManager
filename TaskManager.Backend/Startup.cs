@@ -21,6 +21,7 @@ namespace TaskManager.Backend
         {
             services.AddMvc().AddNewtonsoftJson();
             services.AddControllers().AddNewtonsoftJson();
+            services.AddScoped<ITaskService, TaskService>();
             services.AddScoped<IStatusesService, StatusesService>();
             services.AddScoped<ITypesService, TypesService>();
             services.AddScoped<IPrioritiesService, PrioritiesService>();
