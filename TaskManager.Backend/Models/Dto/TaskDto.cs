@@ -28,6 +28,9 @@ namespace TaskManager.Backend.Models.Dto
         [JsonProperty("storyPoints")]
         private int StoryPoints { get; }
 
+        [JsonProperty("priorityId")]
+        private int PriorityId { get; }
+        
         public TaskDto(TaskModel item)
         {
             Id = item.Id;
@@ -38,6 +41,7 @@ namespace TaskManager.Backend.Models.Dto
             Description = item.Description;
             StatusId = item.StatusId;
             StoryPoints = item.StoryPoint;
+            PriorityId = item.PriorityId;
         }
         
         public static TaskDto FromDocument(TaskModel doc) => new TaskDto(doc);

@@ -30,5 +30,8 @@ namespace TaskManager.Backend.Models
         
         [Column("story_points")]
         public int StoryPoint { get; set; }
+        
+        [Column("priority_id")]
+        public int PriorityId { get; set; }
     }
 }
