@@ -26,10 +26,10 @@ namespace TaskManager.Backend.Models.Dto
         private int StatusId { get; }
         
         [JsonProperty("storyPoints")]
-        private int StoryPoints { get; }
+        private int? StoryPoints { get; }
 
         [JsonProperty("priorityId")]
-        private int PriorityId { get; }
+        private int? PriorityId { get; }
         
         public TaskDto(TaskModel item)
         {

@@ -29,9 +29,9 @@ namespace TaskManager.Backend.Models
         public int StatusId { get; set; }
         
         [Column("story_points")]
-        public int StoryPoint { get; set; }
+        public int? StoryPoint { get; set; }
         
         [Column("priority_id")]
-        public int PriorityId { get; set; }
+        public int? PriorityId { get; set; }
     }
 }
