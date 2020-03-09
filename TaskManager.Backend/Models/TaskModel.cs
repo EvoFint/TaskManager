@@ -17,7 +17,7 @@ namespace TaskManager.Backend.Models
         public string Name { get; set; }
         
         [Column("parent_item_id")]
-        public int ParentItemId { get; set; }
+        public int? ParentItemId { get; set; }
         
         [Column("type_id")]
         public int TypeId { get; set; }

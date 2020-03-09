@@ -14,7 +14,7 @@ namespace TaskManager.Backend.Models.Dto
         private string Name { get; }
         
         [JsonProperty("parentItemId")]
-        private int ParentItemId { get; }
+        private int? ParentItemId { get; }
         
         [JsonProperty("typeId")]
         private int TypeId { get; }
