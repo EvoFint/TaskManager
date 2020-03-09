@@ -6,7 +6,7 @@ using TaskManager.Backend.Services;
 
 namespace TaskManager.Backend.Controllers
 {
-    [Microsoft.AspNetCore.Components.Route("api/tasks")]
+    [Route("api/tasks")]
     [ApiController]
     public class TasksController:Controller
     {
