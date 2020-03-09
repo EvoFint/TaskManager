@@ -5,6 +5,7 @@ namespace TaskManager.Backend.Models.Context
 {
     public class TaskManagerAppContext : DbContext
     {
+        public DbSet<TaskModel> Tasks { get; set; }
         public DbSet<StatusesDictionary> StatusesDictionaries { get; set; }
         public DbSet<TypesDictionary> TypesDictionaries { get; set; }
         public DbSet<PrioritiesDictionary> PrioritiesDictionaries { get; set; }
